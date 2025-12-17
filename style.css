@@ -1,0 +1,56 @@
+/* Google Fonts */
+@import url('fonts.googleapis.com');
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content {
+    animation: fadeInDown 1s ease-out;
+}
+/* Hover Effect pada Section Alamat */
+.alamat {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alamat:hover {
+    transform: translateX(10px);
+    box-shadow: -10px 0 20px rgba(0, 255, 255, 0.1);
+}
+/* Button Futuristik (Jika ingin ditambah ke Hero) */
+.btn-cyber {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: transparent;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.btn-cyber:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+/* Reveal on Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
